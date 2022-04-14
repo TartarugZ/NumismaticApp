@@ -6,7 +6,6 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.*;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -22,12 +21,13 @@ public class CoinSearcher {
 
     static private ArrayList<Set<String>> countries; //список со всеми странами
 
-    private HashMap<String,CountryInformation> infoAboutCountrys =new HashMap<>(); // содержит в себе название страны и объект CountryInformation, в котором хранится информация о стране
+    private HashMap<String,CountryInformation> infoAboutCountrys ; // содержит в себе название страны и объект CountryInformation, в котором хранится информация о стране
     //черная заготовка кэша
 
     public CoinSearcher() throws IOException {  //отвечает за подгрузку нужной инфы для отпимизации поиска
 
         mainPageDoc =Jsoup.connect(linkOnMainPageUcoin).get(); // получает главную страницу сайта ucoin из html кода которой будет извлечаться информация
+        infoAboutCountrys =new HashMap<>();
         getCountries();                                               //подгружает страны в список countries в  пользовательском виде
 
 

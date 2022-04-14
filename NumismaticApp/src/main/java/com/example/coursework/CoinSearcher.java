@@ -127,7 +127,7 @@ public class CoinSearcher {
 
 
 
-        getInfoAboutCountry("Германия");
+        getInfoAboutCountry("Germany");
 
 
     }

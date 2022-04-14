@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Collection {
 
-    private ArrayList<Coin> collection=new ArrayList<>();
+    private ArrayList<Coin> coinCollection =new ArrayList<>();
 
     public final String nameCollection;
 
@@ -14,12 +14,12 @@ public class Collection {
 
     }
 
-    public ArrayList<Coin> getCollection() {
-        return collection;
+    public ArrayList<Coin> getCoinCollection() {
+        return coinCollection;
     }
 
     public void addToCollection(Coin coin){
-        collection.add(coin);
+        coinCollection.add(coin);
 
     }
 

@@ -17,7 +17,7 @@ import java.util.Optional;
 public class Launch extends Application {
 
 
-    public static String linkOnMainPageUcoin = "https://ru.ucoin.net";//ссылка на главную страницу сайта uCoin с возможность изменения языка
+    public static String linkOnMainPageUcoin = "https://en.ucoin.net";//ссылка на главную страницу сайта uCoin с возможность изменения языка
 
     @Override
     public void start(Stage stage) throws IOException {
